@@ -1,0 +1,15 @@
+.card__v{
+  width: 300px;
+  height: auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+.position__btn__nuevolibro{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.container_contenido{
+  flex-direction: row;
+  flex-wrap: wrap;
+}

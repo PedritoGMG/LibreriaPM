@@ -1,0 +1,363 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+/* You can add global styles to this file, and also import other style
+files */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  margin: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: "";
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/*
+.container{
+  min-height: 75vh;
+  max-height: 75vh;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  background-color: aliceblue;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  margin-left: 8rem;
+  margin-right: 4rem;
+}*/
+.container{
+  max-height: 75vh;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  margin-left: 8rem;
+  margin-right: 4rem;
+
+  border: 0.1rem solid white;
+  margin-bottom: 0.42rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+/* MODAL IMG */
+
+.img-avatar {
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 1.3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.backgraund-modal-img {
+  background: rgba(1, 0, 0, 0.4);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  align-items: center;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 21%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #e9ecef;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  align-content: center;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  display: flex;
+  margin: 0.5rem;
+  pointer-events: none;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+padding: 1rem;
+}
+.modal-footer {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex; -webkit-box-align: center; -ms-flex-align: center;
+align-items: center; -webkit-box-pack: end; -ms-flex-pack: end;
+justify-content: space-between;
+padding: 1rem;
+border-top: 1px solid #e9ecef;
+}
+.card_recurso {
+  border-radius: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+  height: 20%;
+  background: 20%;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+/*
+.container_recursos{
+  max-height: 75vh;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background-color: aliceblue;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  margin-left: 8rem;
+  margin-right: 4rem;
+}*/
+.container_recursos{
+  max-height: 75vh;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  margin-left: 8rem;
+  margin-right: 4rem;
+
+  border: 0.1rem solid white;
+  margin-bottom: 0.42rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.container_contenido{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.container_contenido::-webkit-scrollbar {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.container_contenido::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.container_contenido::-webkit-scrollbar-thumb {
+  background: #888;
+  border: white solid 0.1rem;
+  border-radius: 10px;
+}
+.container_contenido::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.recurso_name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center; display: flex;
+}
+.button-agregar{
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  width: 100%;
+  box-shadow: 0rem 0rem 0.25rem black;
+}
+.mainTitle{
+  margin: 1;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0rem;
+}
+.p-breadcrumb{
+  position: sticky;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+p-breadcrumb{
+  position: sticky;
+}
+.p-menuitem-text{
+  margin: 0rem 1rem;
+}
+.p-dock-list-container{
+  margin-left: 1rem;
+}
+.image-background-default{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("https://www.metalocus.es/sites/default/files/files/metalocus_elena-orte-y-guillermo-sevillano_biblioteca-gabriel-garcia-marquez_09.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}

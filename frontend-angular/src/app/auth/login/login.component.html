@@ -1,0 +1,47 @@
+<div class="limiter">
+  <div class="image-background-default">
+  <div class="wrap-login100">
+  <div class="caja-login">
+  <form [formGroup]="loginUser" class="login100-form validate-form formulario">
+
+  <span class="loginTitle"> Log in </span>
+  <hr class="mt-10 mb-10" />
+  <div>
+
+    <img src="assets/images/user.png" class="iconImage"/>
+
+    <p-floatLabel>
+      <input
+        id="Email"
+        type="email"
+        pInputText
+        formControlName="Email"
+      />
+      <label for="Email">Email</label>
+    </p-floatLabel>
+    <p-floatLabel>
+      <input
+        id="pass"
+        type="password"
+        pInputText
+        formControlName="Pw"
+      />
+      <label for="pass">Password</label>
+    </p-floatLabel>
+  </div>
+  <hr class="mt-10 mb-10" />
+  </form>
+  <div class="botones">
+      <p-button type="button" label="Logearse" [raised]="true"
+      severity="contrast"
+      (click)="loginUserBtn($event)" [disabled]="!loginUser.valid"
+      />
+      <p-button type="button" label="Registrarse" [raised]="true"
+        severity="contrast"
+        (click)="registerUserBtn($event)"
+        />
+  </div>
+</div>
+</div>
+</div>
+</div>

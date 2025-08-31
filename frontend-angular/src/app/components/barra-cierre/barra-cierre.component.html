@@ -1,0 +1,14 @@
+<!--
+<div class="closeBar">
+  <div>
+    <div class="btn-close" (click)="navigateToMain()"></div>
+  </div>
+</div>
+-->
+
+
+<span class="p-input-icon-left" style="position: absolute; top: 0.25rem; right: 15rem;">
+  <i class="pi pi-search"></i>
+  <input type="search" placeholder="Search" #textSearch pInputText
+  (keyup)="searchRecurso(textSearch.value)">
+</span>

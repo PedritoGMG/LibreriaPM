@@ -1,0 +1,23 @@
+<div class="animate__animated animate__fadeIn animate_faster">
+  <app-barra-cierre
+  [dataReal]="recursos"
+  (dataEmit)="filter($event)"
+  >
+  </app-barra-cierre>
+  <div class="container_recursos">
+    <div>
+      <button pButton class="p-button-success button-agregar" icon="pi pi-plus" label="Nueva Formato" (click)="put()" *ngIf="authService.isAdmin()"></button>
+    </div>
+    <div class="container_contenido">
+      <div class="card_recurso" *ngFor="let recurso of filteredRecursos">
+        <span class="recurso_name">
+          {{recurso.nombre|titlecase}}
+        </span>
+        <div>
+          <button pButton style="margin-right: 0.5rem;" class="p-button-warning" icon="pi pi-pencil" (click)="post(recurso)" *ngIf="authService.isAdmin()"></button>
+          <button pButton class="p-button-danger" icon="pi pi-times" (click)="delete(recurso)" *ngIf="authService.isAdmin()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

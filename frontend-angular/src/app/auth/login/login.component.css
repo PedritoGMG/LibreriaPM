@@ -1,0 +1,75 @@
+.wrap-login100 {
+  height: 100%;
+  padding: 2.5rem 5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.caja-login{
+  border: 0.1rem solid white;
+  padding: 1.25rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 25rem;
+  align-self: center;
+}
+.loginTitle{
+  font-size: 1.5rem;
+  font-weight: bold ;
+  margin: 0.5rem;
+  text-align: center;
+  color: white;
+}
+.formulario{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.formulario div{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem 10rem;
+}
+.botones{
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: row;
+  margin: 2rem;
+  padding: 0rem;
+}
+hr{
+  background-color: white;
+  height: 0.025rem;
+  border-radius: 1rem;
+  width: 18rem;
+}
+.mt-10{
+  margin-top: 1rem;
+}
+.mb-10{
+  margin-bottom: 1rem;
+}
+p-floatLabel label{
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+.p-inputtext{
+  margin: 0rem 0rem;
+  padding: 1rem;
+}
+.iconImage{
+  height: 10rem;
+  width: 10rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}

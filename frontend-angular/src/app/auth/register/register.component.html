@@ -1,0 +1,117 @@
+<div class="limiter">
+  <div
+    class="image-background-default"
+  >
+    <div class="wrap-login100">
+      <div class="caja-register">
+      <span class="registerTitle"> Registro </span>
+      <form [formGroup]="userRegisterForm" class="login100-form validate-form formulario">
+        <div class="primerDiv">
+          <p-floatLabel>
+            <input
+              id="nombre"
+              type="text"
+              pInputText
+              formControlName="Nombre"
+            />
+            <label for="nombre">Nombre</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input
+              id="apellidos"
+              type="text"
+              pInputText
+              formControlName="Apellidos"
+            />
+            <label for="apellidos">Apellidos</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input id="cp" type="text" pInputText formControlName="CP" />
+            <label for="cp">Codigo Postal</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input
+              id="direccion"
+              type="text"
+              pInputText
+              formControlName="Direccion"
+            />
+            <label for="direccion">Dirección</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input
+              id="poblacion"
+              type="text"
+              pInputText
+              formControlName="Poblacion"
+            />
+            <label for="poblacion">Población</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input id="dni" type="text" pInputText formControlName="DNI" />
+            <label for="dni">DNI</label>
+          </p-floatLabel>
+        </div>
+        <hr class="mt-10 mb-10" />
+        <div>
+          <p-floatLabel>
+            <input id="email" type="email" pInputText formControlName="Email" />
+            <label for="email">Email</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input id="pw" type="password" pInputText formControlName="PW"/>
+            <label for="pw">Contraseña</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input id="pwR" type="password" pInputText formControlName="Pw2" />
+            <label for="pwR">Repite la Contraseña</label>
+          </p-floatLabel>
+        </div>
+        <hr class="mt-10 mb-10" />
+        <div>
+          <p-floatLabel>
+            <input
+              id="nombreTitular"
+              type="text"
+              pInputText
+              formControlName="NombreTitular"
+            />
+            <label for="nombreTitular">Nombre Titular</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input
+              id="numTarjeta"
+              type="text"
+              pInputText
+              formControlName="NumberCard"
+            />
+            <label for="numTarjeta">Nº Tarjeta</label>
+          </p-floatLabel>
+          <p-floatLabel>
+            <input id="cvv" type="text" pInputText formControlName="CVV" />
+            <label for="cvv">CVV</label>
+          </p-floatLabel>
+        </div>
+      </form>
+      <div class="">
+        <div class="botones">
+          <p-button
+            type="button"
+            label="Logearse"
+            [raised]="true" severity="contrast"
+            (click)="loginUserBtn()"
+          />
+          <p-button
+            type="button"
+            [disabled]="!userRegisterForm.valid"
+            label="Registrarse"
+            [raised]="true"
+            severity="contrast"
+            (click)="registerUserBtn()"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

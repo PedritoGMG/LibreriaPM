@@ -1,0 +1,35 @@
+<div class="animate__animated animate__fadeIn animate_faster">
+  <app-barra-cierre
+  [dataReal]="libros"
+  (dataEmit)="filter($event)"
+  >
+  </app-barra-cierre>
+  <div class="container">
+    <div class="position_btn_nuevolibro">
+      <button pButton
+      [routerLink]="['/main/nuevo-libro']"
+      label="Nuevo Libro" icon="pi pi-plus" class="p-button-success button-agregar" *ngIf="authService.isAdmin()"></button>
+    </div>
+    <div class="container_contenido">
+      <div class="card__v" *ngFor="let libro of filteredLibros">
+        <p-card>
+        <ng-template pTemplate="header">
+        <img [src]="getImage(libro.imgname)" class="img-avatar" />
+        <span style="font-weight: bold">
+        {{libro.nombre}}
+        </span>
+        </ng-template>
+        <p>Autor: {{ libro.autor }}</p>
+        <p>Editorial: {{ libro.edicion }}</p>
+        <p>Edición: {{ libro.edicion }}</p>
+        <p>Fromato: {{ libro.formato|uppercase }}</p>
+        <p>Precio: {{ libro.precio| currency:"€" }}</p>
+        <p>Isbn: {{ libro.isbn}}</p>
+        <ng-template pTemplate="footer">
+          Cantidad: {{ libro.cantidad }}
+        </ng-template>
+        </p-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+.barIcon{
+  width: 4em;
+  height: 4rem;
+  background-color: aliceblue;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  margin: 1rem 1.5rem;
+  align-self: center;
+}
